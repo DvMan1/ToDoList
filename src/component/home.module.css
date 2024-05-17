@@ -1,8 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .home_background {
   width: 100%;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 45px);
   display: flex;
   flex-direction: column;
   justify-content: center;
