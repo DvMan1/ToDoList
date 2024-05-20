@@ -1,0 +1,5 @@
+.status_filter_conteiner{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}

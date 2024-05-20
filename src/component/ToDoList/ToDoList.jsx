@@ -1,6 +1,6 @@
-import FormAddToDo from"./FormAddToDo"
-import Filter from "./InputSearch";
-import StatusFilter from "./StatusFilter";
+import FormAddToDo from"./FormAddToDo/FormAddToDo"
+import Filter from "./InputSearch/InputSearch";
+import StatusFilter from "./StatusFilter/StatusFilter";
 import CreateTodo from "./CreateToDo/CreateTodo";
 import styles from "./ToDoList.module.css"
 

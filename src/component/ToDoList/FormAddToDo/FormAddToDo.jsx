@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTask } from "../../redux/ToDoSlice";
+import { addTask } from "../../../redux/ToDoSlice";
+import styles from "./FormAddToDo.module.css";
 
 const FormAddToDo = () => {
   const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const FormAddToDo = () => {
   };
 
   return (
-    <div>
+    <div className={styles.add_form_conteiner}>
       <input
         type="text"
         value={taskText}

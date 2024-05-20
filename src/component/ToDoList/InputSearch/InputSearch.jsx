@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setFilterText } from "../../redux/ToDoSlice";
+import { setFilterText } from "../../../redux/ToDoSlice";
+import styles from "./InputSearch.module.css";
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -11,14 +12,14 @@ const Filter = () => {
   };
 
   return (
-    <>
+    <div className={styles.input_conteiner}>
       <input
         type="text"
         placeholder="Фильтр"
         value={filterText}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 };
 
