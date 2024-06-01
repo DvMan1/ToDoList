@@ -1,7 +1,7 @@
 .nav_box {
     position: sticky;
     top: 0px;
-    background-color: rgb(123, 193, 123);
+    background-color: rgb(183, 183, 183);
     width: 100%;
     display: flex;
     height: 65px;
@@ -35,7 +35,11 @@
     transition: scale 250ms linear;
 
 }
-
+.icon {
+    width: 10px;
+    height: 10px;
+    fill: #000;
+  }
 .nav_link:hover {
     color: white;
 

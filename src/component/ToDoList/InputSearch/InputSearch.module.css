@@ -1,5 +1,19 @@
 .input_conteiner{
     display: flex;
+    position: relative;
     justify-content: center;
-    flex-basis: 100%;
+    width: 25%;
+}
+.search_task_label{
+    color: rgb(86, 86, 86);
+    top: 0;
+    left:5px;
+    position: absolute;
+}
+.input_filter{
+    width: 100%;
+}
+.input_filter:focus + .search_task_label{
+    transform: translateY(-20px);
+    color: rgb(255, 0, 0);
 }

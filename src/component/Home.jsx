@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./home.module.css"
 
+
 const Home = () => {
   return (
     <div className={css.home_background}>
@@ -10,6 +11,7 @@ const Home = () => {
         content, useful resources, and much more.
       </p>
       <div className={css.home_image} >
+        
         <img
           src="https://cdn.epicstream.com/images/ncavvykf/epicstream/983857d1e06514ea566e7bb109f6358998a07328-800x450.jpg?rect=0,15,800,420&w=1200&h=630&auto=format"
           alt="Welcome to our website"

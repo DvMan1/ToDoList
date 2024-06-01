@@ -20,13 +20,15 @@ const FormAddToDo = () => {
 
   return (
     <div className={styles.add_form_conteiner}>
+      <label className={styles.label_todo_form}>What do you want to do?</label>
       <input
+      className={styles.input_todo_form}
         type="text"
         value={taskText}
         onChange={handleInputChange}
         placeholder="Enter task..."
       />
-      <button onClick={handleAddTask}>Add Task</button>
+      <button className=""onClick={handleAddTask}>Add Task</button>
     </div>
   );
 };

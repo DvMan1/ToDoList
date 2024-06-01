@@ -15,10 +15,15 @@ const Filter = () => {
     <div className={styles.input_conteiner}>
       <input
         type="text"
-        placeholder="Фильтр"
+        placeholder=""
         value={filterText}
         onChange={onChange}
+        className={styles.input_filter}
+        id="filter"
       />
+      <label className={styles.search_task_label} htmlFor="filter">
+        Search task
+      </label>
     </div>
   );
 };

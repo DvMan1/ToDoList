@@ -2,4 +2,17 @@
     display: flex;
     justify-content: center;
     flex-basis: 100%;
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.label_todo_form{
+    flex-basis: 100%;
+    text-align: center;
+}
+.input_todo_form{
+    height: 50px;
+    background-color:rgb(181, 211, 217) ;
+    opacity: 0.5;
 }
