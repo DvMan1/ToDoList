@@ -2,6 +2,8 @@ import styles from "./NavigationBar.module.css";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import icon from "../../../assets/symbol-defs.svg";
+import { useSelector } from "react-redux";
+import User from "../../LoginForm/User";
 
 const StyledLink = styled(NavLink)`
   color: black;
@@ -15,6 +17,7 @@ const StyledLink = styled(NavLink)`
 `;
 
 function NavigationBar() {
+  const isLogged = useSelector((state) => state.login.isLoggedIn);
   return (
     <>
       <nav className={styles.nav_box}>
@@ -27,7 +30,9 @@ function NavigationBar() {
         <StyledLink to="/loginform" className={styles.nav_link}>
           LoginForm
         </StyledLink>
+        {isLogged && <User></User>}
       </nav>
+      
     </>
   );
 }
