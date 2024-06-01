@@ -19,9 +19,6 @@ function NavigationBar() {
     <>
       <nav className={styles.nav_box}>
         <StyledLink to="/" className={styles.nav_link}>
-          <svg className={styled.icon}>
-            <use href={`${icon}#icon-home`}></use>
-          </svg>
           Home
         </StyledLink>
         <StyledLink to="/todolist" className={styles.nav_link}>
